@@ -1,9 +1,9 @@
-import Components from '@/components/components'
+import Components from '@/components/componentsPage'
 import React from 'react'
 
 const ComponentsPage = () => {
   return (
-    <div>
+    <div className=''>
       <Components/>
     </div>
   )
