@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import RightWrapper from "./RightWrapper";
 import { data } from "@/utils";
+import { ArrowUpRight } from "lucide-react";
 
 const Components = () => {
   const [selectedBox, setSelectedBox] = useState("Introduction");
@@ -30,27 +31,10 @@ const Components = () => {
         </div>
       </div>
       <div className="flex-1 bg-blue-50 rounded-xl vsm:max-sm:m-2 mt-4 mb-4 mr-4">
-        <div className="flex vsm:max-sm:px-4 justify-center items-center h-[100%]">
+        <div className="flex rounded-lg vsm:max-sm:px-4 overflow-hidden justify-center items-center h-[100%]">
           {selectedBox && <RightWrapper selectedKey={selectedBox} />}
         </div>
       </div>
-
-      {/* Mobile Fixed Footer for Navigation */}
-      {/* <div className="md:hidden fixed bottom-0 left-0 w-full bg-gray-800 text-white flex justify-around py-3 shadow-md">
-        {data.map((item) => (
-          <button
-            key={item.input}
-            onClick={() => handleBox(item.input)}
-            className={`text-sm font-semibold ${
-              selectedBox === item.input
-                ? "text-blue-400"
-                : "text-gray-400 hover:text-white"
-            }`}
-          >
-            {item.input}
-          </button>
-        ))}
-      </div> */}
     </div>
   );
 };

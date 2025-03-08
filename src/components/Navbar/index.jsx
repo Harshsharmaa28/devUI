@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,10 @@ const Navbar = () => {
     <div className="flex flex-col md:flex-row px-4 md:px-20 py-6 bg-gray-900 border-b border-gray-500">
       {/* Logo */}
       <div className="flex justify-between items-center">
-        <span className="text-3xl font-extrabold text-white hover:cursor-pointer">
+        <Image className="absolute vsm:max-sm:hidden md:-ml-10 mt-1 hover:cursor-pointer object-cover w-[70px] h-[70px]" src={"/logo.png"} width={64} height={4} alt="Error"/>
+        <Link href={"/"} className="text-3xl md:ml-5 font-extrabold text-white hover:cursor-pointer">
           DevUIx
-        </span>
+        </Link>
         {/* Hamburger Icon */}
         <button
           onClick={() => setIsOpen(!isOpen)}

@@ -33,7 +33,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="md:p-10 w-[80%] flex flex-col items-center justify-center md:w-[50%] md:px-4">
+    <div className="md:p-10 w-[80%] flex flex-col items-center justify-center md:w-[100%] md:px-4">
       {/* Title */}
       <h1 className="text-3xl font-bold text-gray-800 mb-6">Search Bar</h1>
       {/* Search Bar */}

@@ -10,7 +10,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex md:mt-10 md:w-[70%]">
+    <div className="flex">
       {/* Left Side: Login Form */}
       <div className="flex-1 flex flex-col justify-center items-center bg-gray-50 px-8 py-16">
         <h1 className="text-4xl font-bold mb-6 text-blue-600">Welcome Back!</h1>

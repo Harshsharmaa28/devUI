@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "DevUIx",
+  title: "DevUIx | For Developers",
   description: "A complete solution for learners & Developers",
 };
 
